@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 12px; 
+}
+
+html {
+    font-family: 'Martel Sans', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: linear-gradient(125deg, #e8d5fa, #fbb6ad);
+    height: 100vh;
+}
+
+.App {
+    background: rgba(26,39,49,1);
+    padding: 50px 35px;
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px #333;
+
+    .form {
+
+        border-bottom: 1px solid #608ca3;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .formInput {
+            padding: 7px;
+            background: transparent;
+            border: 0;
+            color: #8f9ca5;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .formButton {
+            background: transparent;
+            border: 0;
+            color: #608ca3;
+            cursor: pointer;
+            padding: 7px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                filter: brightness(0.8);
+            }
+        }
+    }
+
+    .weatherLocation {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+
+        small {
+            color: #859da4;
+            margin-top: 30px;
+            font-size: 12px;
+        }
+
+        .weatherLocationName {
+            color: #eff4f4;
+            font-size: 12px;
+        }
+
+    }
+
+    .weatherCurrent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .weatherCurrentConditionIcon {
+            margin: 10px 0;
+        }
+
+        .weatherCurrentConditionText {
+            padding: 12px;
+            color: #fffffb;
+            background: #353361;
+            border-radius: 25px;
+        }
+
+        .weatherCurrentConditionTemp {
+            margin: 20px 0;
+            color: #fff;
+            font-size: 46px;
+        }
+    }
+
+    .weatherInfo {
+        display: flex;
+        gap: 10px;
+        color: #fff;
+            
+        .weatherInfoItem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            svg {
+                margin-right: 2px;
+                color: #6686b6;
+            }
+        }
+    }
+
+    .errorMessage {
+        padding: 7px;
+        border: 2px solid #ab27d6;
+        background: #d260f9;
+        color: #fff;
+        border-radius: 12px;
+        margin-top: 10px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+}
