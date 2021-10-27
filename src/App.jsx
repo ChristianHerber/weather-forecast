@@ -11,7 +11,7 @@ function App() {
   const [weather, setWeather] = useState(null);
   const [errorMessage, setErrorMessage] = useState('')
 
-  const url = `http://api.weatherapi.com/v1/current.json?key=8ec4295a8ab24e2bb7032906212110&q=${city}`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=8ec4295a8ab24e2bb7032906212110&q=${city}`;
 
   function handleClick() {
     axios(url).
